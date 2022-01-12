@@ -19,7 +19,9 @@ The purpose of the election audit analysis is to become familiar with Python and
 
 
 ## Election-Audit Summary
-In order to use this script for any election, the script will need to be slightly revised. First, the csv file containing the election results will need to be read and analyzed by the script. This would require a slight change to this line of code `file_to_load = os.path.join("Resources", "election_results.csv")`. There may be necessary changes depending on the type of election is being held. For example, a breakdown of votes by state as opposed to votes by county may be preferred in a presidential election. If that is the case, we can change instances of "county" in our code to "state." For the current congressional election, the county votes and percentages were calculated and printed to our txt file (see below). Depending on the type of election, we can change the output information from county to state so the results are appropriate for the election. 
+In order to use this script for any election, the script will need to be slightly revised. First, the csv file containing the election results will need to be read and analyzed by the script. This would require a slight change to this line of code `file_to_load = os.path.join("Resources", "election_results.csv")`. The relative path to the correct csv file will need to replace the one that is currently in the script. 
+
+There may be necessary changes depending on the type of election that is being held. For example, a breakdown of votes by state as opposed to votes by county may be preferred when reporting on overall results of a presidential election. In this case, we can change instances of "county" in our code to "state." For the current congressional election, the county votes and percentages were calculated and printed to our txt file (see below). Depending on the information needed, we can change the output information from county to state so the results are appropriate for the election. 
 
 <img src ="images/election_analysis_text_results.png">
 
