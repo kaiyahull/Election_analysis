@@ -1,7 +1,8 @@
 # Election Results Analysis using Python
 
 ## Overview of Election Audit
-The purpose of the election audit analysis is to become familiar with Python and Visual Studio Code. Python is a popular programming language that we used in this exercise to write code to extract the requested data from the election results dataset. We used Visual Studio Code as our IDE (Integrated Studio Environment) to write, test, and save our code. In this module, we performed an audit of election results to be submitted to the Colorado Board of Elections. The information we need to extract from the dataset is total numbers of votes cast, number and percentage of votes that were cast in each county, list of candidates who received votes, total number of votes for each candidate, percentage of votes won by each candidate, and the winner of the election. 
+
+In this project, an election audit analysis is performed to determine the total number of votes cast, number and percentage of votes in each county, list of candidates who received votes, total number of votes for each candidate, percentage of votes won by each candidate, and the winner of the election. 
 
 
 ## Election-Audit Results
@@ -16,12 +17,6 @@ The purpose of the election audit analysis is to become familiar with Python and
 	* Diana DeGette: 272,892 votes (73.8% of total votes)
 	* Raymon Anthony Doane: 11,606 votes (3.1% of total votes)
 * Diana DeGette won the election with 272,892 votes which consisted of 73.8% of the total votes 
-
-
-## Election-Audit Summary
-In order to use this script for any election, the script will need to be slightly revised. First, the csv file containing the election results will need to be read and analyzed by the script. This would require a slight change to this line of code `file_to_load = os.path.join("Resources", "election_results.csv")`. The relative path to the correct csv file will need to replace the one that is currently in the script. 
-
-There may be necessary changes depending on the type of election that is being held. For example, a breakdown of votes by state as opposed to votes by county may be preferred when reporting on overall results of a presidential election. In this case, we can change instances of "county" in our code to "state." For the current congressional election, the county votes and percentages were calculated and printed to our txt file (see below). Depending on the information needed, we can change the output information from county to state so the results are appropriate for the election. 
 
 <img src ="images/election_analysis_text_results.png">
 
